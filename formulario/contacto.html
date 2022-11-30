@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mejores juegos de mesa</title>
+    <link rel="icon" href="C:\Users\fabio\OneDrive\Escritorio\REDES\LENGUAJE\HTML\tareaHTML\MJDM\imágenes\icono.png"
+        type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset style="width:30%">
+            <legend>Tus datos</legend>
+            <label for="user_name">Nombre: </label><input type="text" name="nombre" id="user_name" value="Howard"
+                required><br>
+            <label for="user_lastname">Apellido: </label><input type="text" name="apellido" id="user_lastname"
+                value="Lovecraft" required><br>
+            <label for="user_email">Email: </label><input type="email" name="email" id="user_mail"
+                placeholder="juegosdemesa@gmail.com" required><br>
+            <label for="nacimiento">Fecha de nacimiento: </label><input type="date" name="fdn" id="nacimiento"
+                required><br>
+            <label for="favorito">Selecciona tu juego favorito:</label><input list="juegos" name="juegofav"
+                id="favorito" required><br>
+            <datalist id="juegos">
+                <option value="Mansiones de la locura">
+                <option value="Dixit">
+                <option value="Catan">
+                <option value="Pandemic">
+                <option value="Mysterium">
+                <option value="Carcassonne">
+                <option value="Otro"></option>
+            </datalist>
+            <label for="coment">Cuéntanos algo:</label><br>
+            <textarea id="coment" name="comentario" required maxlength="600" rows="10"
+                cols="50">Escribe algo aquí...</textarea>
+            <div class="instructions">Utiliza 100 palabras o menos.</div><br>
+            <input type="checkbox" required> Acepto la política de privacidad.<br><br>
+            <button type="submit">Enviar </button>
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
